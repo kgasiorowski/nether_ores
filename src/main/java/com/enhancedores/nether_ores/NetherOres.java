@@ -47,6 +47,8 @@ public class NetherOres {
                     .group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.nether_redstone.getRegistryName());
             ItemList.nether_emerald = new BlockItem(BlockList.nether_emerald, new Item.Properties()
                     .group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.nether_emerald.getRegistryName());
+            ItemList.nether_lapis = new BlockItem(BlockList.nether_lapis, new Item.Properties()
+                    .group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.nether_lapis.getRegistryName());
 
             event.getRegistry().registerAll(
                     ItemList.nether_iron,
@@ -54,7 +56,8 @@ public class NetherOres {
                     ItemList.nether_gold,
                     ItemList.nether_diamond,
                     ItemList.nether_redstone,
-                    ItemList.nether_emerald
+                    ItemList.nether_emerald,
+                    ItemList.nether_lapis
             );
 
             LOGGER.info("Nether ores items registered");
@@ -94,6 +97,11 @@ public class NetherOres {
                     .harvestTool(ToolType.PICKAXE)
                     .hardnessAndResistance(3f)
                     ).setRegistryName(new ResourceLocation(MOD_ID, "nether_emerald"));
+            BlockList.nether_lapis = new Block(Block.Properties.create(Material.ROCK)
+                    .harvestLevel(2)
+                    .harvestTool(ToolType.PICKAXE)
+                    .hardnessAndResistance(3f)
+                    ).setRegistryName(new ResourceLocation(MOD_ID, "nether_lapis"));
 
             event.getRegistry().registerAll(
                     BlockList.nether_iron,
@@ -101,7 +109,8 @@ public class NetherOres {
                     BlockList.nether_diamond,
                     BlockList.nether_gold,
                     BlockList.nether_redstone,
-                    BlockList.nether_emerald
+                    BlockList.nether_emerald,
+                    BlockList.nether_lapis
             );
 
             LOGGER.info("Nether ores blocks registered");

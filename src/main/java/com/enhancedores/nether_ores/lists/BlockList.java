@@ -10,5 +10,6 @@ public class BlockList {
     public static Block nether_gold;
     public static Block nether_redstone;
     public static Block nether_emerald;
+    public static Block nether_lapis;
 
 }

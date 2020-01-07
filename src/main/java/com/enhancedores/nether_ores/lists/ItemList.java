@@ -10,5 +10,6 @@ public class ItemList {
     public static Item nether_gold;
     public static Item nether_redstone;
     public static Item nether_emerald;
+    public static Item nether_lapis;
 
 }

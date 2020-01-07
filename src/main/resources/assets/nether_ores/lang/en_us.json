@@ -4,5 +4,6 @@
 	"block.nether_ores.nether_gold": "Nether gold",
 	"block.nether_ores.nether_redstone": "Nether redstone",
 	"block.nether_ores.nether_diamond": "Nether diamond",
-	"block.nether_ores.nether_emerald": "Nether emerald"
+	"block.nether_ores.nether_emerald": "Nether emerald",
+	"block.nether_ores.nether_lapis": "Nether lapis"
 }
