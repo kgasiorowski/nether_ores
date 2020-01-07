@@ -2,6 +2,7 @@ package com.enhancedores.nether_ores;
 
 import com.enhancedores.nether_ores.lists.BlockList;
 import com.enhancedores.nether_ores.lists.ItemList;
+import com.enhancedores.nether_ores.world.OreGeneration;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
@@ -13,6 +14,8 @@ import net.minecraftforge.common.ToolType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -22,9 +25,20 @@ public class NetherOres {
     public static final String MOD_ID = "nether_ores";
     private static final Logger LOGGER = LogManager.getLogger();
 
+    public static BlockList blockList;
+    public static ItemList itemList;
+
     public NetherOres() {
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
+    }
+
+    private void setup(final FMLCommonSetupEvent event){
+
+        OreGeneration.setupNetherOreGeneration();
+        LOGGER.info("Setup method registered");
+
     }
 
     // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD

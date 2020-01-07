@@ -8,30 +8,28 @@ modLoader="javafml" #mandatory
 # A version range to match for said mod loader - for regular FML @Mod it will be the forge version
 loaderVersion="[30,)" #mandatory (28 is current forge version)
 # A URL to refer people to when problems occur with this mod
-#issueTrackerURL="http://my.issue.tracker/" #optional
+issueTrackerURL="https://github.com/kgasiorowski/nether_ores/issues" #optional
 # A list of mods - how many allowed here is determined by the individual mod loader
 [[mods]] #mandatory
 # The modid of the mod
 modId="nether_ores" #mandatory
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
-version="${file.jarVersion}" #mandatory
+version="v0.2" #mandatory
  # A display name for the mod
 displayName="Nether ores" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification <here>
 # updateJSONURL="http://myurl.me/" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI
-# displayURL="http://example.com/" #optional
+ displayURL="https://github.com/kgasiorowski/nether_ores" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
-# logoFile="examplemod.png" #optional
+ logoFile="nether_diamond.png" #optional
 # A text field displayed in the mod UI
  credits="Credit to minimadam for getting me back into minecraft" #optional
 # A text field displayed in the mod UI
-authors="Illegal Waffles" #optional
+authors="kgasiorowski" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Ore enhancements.
-
-Adds nether ores.
+Adds ores to the nether which yield double the resources of overworld ores.
 '''
 
 [[dependencies.nether_ores]]
@@ -41,22 +39,14 @@ Adds nether ores.
     ordering="NONE"
     side="BOTH"
 
-# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
-#[[dependencies.examplemod]] #optional
-#    # the modid of the dependency
-#    modId="forge" #mandatory
-#    # Does this dependency have to exist - if not, ordering below must be specified
-#    mandatory=true #mandatory
-#    # The version range of the dependency
-#    versionRange="[30,)" #mandatory
-#    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
-#    ordering="NONE"
-#    # Side this dependency is applied on - BOTH, CLIENT or SERVER
-#    side="BOTH"
-## Here's another dependency
-#[[dependencies.examplemod]]
-#    modId="minecraft"
-#    mandatory=true
-#    versionRange="[1.15.1]"
-#    ordering="NONE"
-#    side="BOTH"
+[[dependencies.nether_ores]] #optional
+    # the modid of the dependency
+    modId="forge" #mandatory
+    # Does this dependency have to exist - if not, ordering below must be specified
+    mandatory=true #mandatory
+    # The version range of the dependency
+    versionRange="[30,)" #mandatory
+    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+    ordering="NONE"
+    # Side this dependency is applied on - BOTH, CLIENT or SERVER
+    side="BOTH"
