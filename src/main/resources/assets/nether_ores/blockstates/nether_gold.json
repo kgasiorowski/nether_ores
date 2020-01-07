@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "nether_ores:block/nether_gold" }
+  }
+}
