@@ -1,1 +1,1 @@
-{"type": "minecraft:block", "pools": [{"rolls": 2, "entries": [{"type": "minecraft:item", "name": "minecraft:coal"}]}]}
+{"type": "minecraft:block", "pools": [{"rolls": 1, "entries": [{"type": "minecraft:item", "name": "nether_ores:nether_coal"}]}]}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "nether_ores:nether_lapis"
+  },
+  "result": {
+    "item": "minecraft:lapis_lazuli",
+    "count": 16
+  }
+}

@@ -2,7 +2,7 @@ package com.enhancedores.nether_ores.config;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 
-public class OregenConfig {
+public class OreGenerationConfig {
 
     public static ForgeConfigSpec.IntValue iron_per_chunk;
     public static ForgeConfigSpec.IntValue iron_per_vein;

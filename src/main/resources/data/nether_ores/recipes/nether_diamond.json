@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "nether_ores:nether_diamond"
+  },
+  "result": {
+    "item": "minecraft:diamond",
+    "count": 2
+  }
+}

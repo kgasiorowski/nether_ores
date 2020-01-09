@@ -35,7 +35,7 @@ public class NetherOres {
 
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 
-        Config.loadConfig(Config.config, FMLPaths.CONFIGDIR.get().resolve("nether_ores_server.toml").toString());
+        Config.loadConfig(Config.config, FMLPaths.CONFIGDIR.get().resolve("nether_ores.toml").toString());
 
         MinecraftForge.EVENT_BUS.register(this);
 

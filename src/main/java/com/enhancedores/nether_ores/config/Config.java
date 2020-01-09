@@ -17,7 +17,7 @@ public class Config {
     static
     {
 
-        OregenConfig.init(builder);
+        OreGenerationConfig.init(builder);
         config = builder.build();
 
     }
