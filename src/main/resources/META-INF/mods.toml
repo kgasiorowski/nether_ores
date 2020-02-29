@@ -14,7 +14,7 @@ issueTrackerURL="https://github.com/kgasiorowski/nether_ores/issues" #optional
 # The modid of the mod
 modId="nether_ores" #mandatory
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
-version="v1.1" #mandatory
+version="v1.1.0" #mandatory
  # A display name for the mod
 displayName="Nether ores" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification <here>
@@ -35,7 +35,7 @@ Adds ores to the nether which yield double the resources of overworld ores.
 [[dependencies.nether_ores]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.15.1]"
+    versionRange="[1.15.2]"
     ordering="NONE"
     side="BOTH"
 
